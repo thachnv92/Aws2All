@@ -27,12 +27,12 @@ hooks:
       timeout: 300
       runas: root
   ApplicationStart:
-    - location: scripts/`start_server.sh`
-    - location: scripts/`create_test_db.sh`
+    - location: scripts/start_server.sh
+    - location: scripts/create_test_db.sh
       timeout: 300
       runas: root
   ApplicationStop:
-    - location: scripts/`stop_server.sh`
+    - location: scripts/stop_server.sh
       timeout: 300
       runas: root
 ```
